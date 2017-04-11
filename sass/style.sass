@@ -7,15 +7,15 @@ body
   font-family: 'Muli', sans-serif
   background-color: $background-color
 
-#header
+.top
   background-color: $background-color
   overflow: hidden
 
-  //display: -webkit-flex
-  //-webkit-justify-content: space-around
+  display: -webkit-flex
+  -webkit-justify-content: space-around
 
-  //display: flex
-  //justify-content: space-around
+  display: flex
+  justify-content: space-around
 
   a
     float: left
@@ -31,35 +31,5 @@ body
       background-color: lighten($background-color, 10%)
       color: black
 
-    .active
-      background-color: lighten($background-color, 30%)
-      color: white
-
   .icon
     display: none
-
-
-@media screen and (max-width: 600px)
-  #header
-    a:not(:first-child)
-      display: none
-    
-    a.icon
-      float: right
-      display: block
-
-
-@media screen and (max-width: 600px)
-  #header
-    .responsive
-      position: relative
-      
-      a.icon
-        position: absolute
-        right: 0
-        top: 0
-      
-      a
-        float: none
-        display: block
-        text-align: left
