@@ -1,5 +1,5 @@
-$background-color: #f92525
-$foreground-color: #f44242 
+$background-color: #ff2626
+$foreground-color: #ff4242
 
 body
   padding: 0px
@@ -10,12 +10,16 @@ body
 .top
   background-color: $background-color
   overflow: hidden
+  list-style-type: none
+  
+  position: fixed
 
   display: -webkit-flex
-  -webkit-justify-content: space-around
+  webkit-justify-content: space-around
 
   display: flex
   justify-content: space-around
+
 
   a
     float: left
@@ -31,5 +35,50 @@ body
       background-color: lighten($background-color, 10%)
       color: black
 
-  .icon
-    display: none
+.parallax
+  position: absolute
+  top: 40px
+  background-image: url("../imgs/background.jpg")
+
+  height: 384px
+  width: 100%
+
+  background-attachment: fixed
+  background-position: center
+  background-repeat: no-repeat
+
+  .caption
+    color: #000
+    position: absolute
+    left: 0
+    top: 50%
+    width: 100%
+    text-align: center
+    font-size: 24px
+    letter-spacing: 10px
+    #title
+      background-color: $background-color
+      margin: 0 auto
+      padding: 20px
+
+@media screen and (max-width: 600px)
+  .top
+    a:not(:first-child)
+      display: none
+    a.icon
+      float: right
+      display: block
+
+@media screen and (max-width: 600px)
+  .top.responsive
+    position: relative
+      
+    a.icon
+      position: absolute
+      right: 0
+      top: 0
+
+    a
+      float: none
+      display: block
+      text-align: left
