@@ -95,6 +95,7 @@ h1#goals
       padding-top: 0px
   #cite 
     max-width: 800px
+    min-width: 800px
     margin: auto
     width: 800px
 
@@ -106,14 +107,19 @@ h1#goals
     p
       text-align: left
 
+
 #charity
   margin: auto
   max-width: 800px
+  min-width: 800px
   text-align: justify
 
   background-color: lighten($background-color, 3%)
   border: 5px solid lighten($background-color, 3%)
   border-radius: 5px
+
+  margin-bottom: 30px
+  padding: 20px
 
   h2
     text-align: center
@@ -131,6 +137,10 @@ h1#goals
 #people-list
   list-style-type: none
   
+#purpose
+  @extend #charity
+  font-size: 1.1em
+  line-height: 30px
 
 a
   color: $link-color
@@ -157,5 +167,5 @@ a
       display: block
       text-align: left
   div.caption
-    //font-size: 14px
+    font-size: 14px
 
