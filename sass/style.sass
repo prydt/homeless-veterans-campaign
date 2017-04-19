@@ -135,6 +135,8 @@ h1#goals
     color: $link-color
 
 #copy
+  margin: auto
+  margin-top: 50px
   text-align: center
   font-size: 15px
 
@@ -162,16 +164,21 @@ a
   @extend #charity
   position: relative
   top: 70px
+  padding: 20px
 
 .item
   opacity: 0
+  perspective: 2000
+
 
 
 @keyframes items
   0%
     opacity: 0
+    transform: translateY(-30px)
   100%
     opacity: 1
+    transform: translateY(0px)
 
 .item.visible
   animation: items 600ms ease-in-out forwards
