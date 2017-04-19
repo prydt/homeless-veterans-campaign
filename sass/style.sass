@@ -1,7 +1,7 @@
 $background-color: #ff2626
 $foreground-color: #ff4242
 $border-color: #b3b3b3
-$link-color: #f593d9
+$link-color: white
 
 body
   padding: 0px
@@ -139,6 +139,7 @@ h1#goals
   margin-top: 50px
   text-align: center
   font-size: 15px
+  padding-bottom: 30px
 
   a
     color: $link-color
@@ -151,11 +152,8 @@ h1#goals
   font-size: 1.1em
   line-height: 30px
 
-#facts
-  @extend #charity
-  
-  ul li
-    list-style-type: none
+#events
+  @extend #purpose
 
 a
   color: $link-color
